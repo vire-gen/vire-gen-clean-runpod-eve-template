@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "7.4.3"
+    default = "7.4.4"
 }
 
 variable "CU_VERSION" {
@@ -42,11 +42,11 @@ target "default" {
         KOHYA_TORCH_VERSION = "2.1.2+cu${CU_VERSION}"
         KOHYA_XFORMERS_VERSION = "0.0.23.post1"
 
-        INVOKEAI_VERSION = "4.2.7"
+        INVOKEAI_VERSION = "4.2.7post1"
         INVOKEAI_TORCH_VERSION = "2.2.2+cu${CU_VERSION}"
         INVOKEAI_XFORMERS_VERSION = "0.0.25.post1"
 
-        COMFYUI_COMMIT = "0a6b0081176c6233015ec00d004c534c088ddcb0"
+        COMFYUI_COMMIT = "a178e25912b01abf436eba1cfaab316ba02d272d"
         COMFYUI_TORCH_VERSION = "2.4.0+cu${CU_VERSION}"
         COMFYUI_XFORMERS_VERSION = "0.0.27.post2"
 
