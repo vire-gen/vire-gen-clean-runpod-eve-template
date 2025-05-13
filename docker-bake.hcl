@@ -39,8 +39,8 @@ target "default" {
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
 
         KOHYA_VERSION = "v25.0.3"
-        KOHYA_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
-        KOHYA_XFORMERS_VERSION = "0.0.29.post3"
+        KOHYA_TORCH_VERSION = "2.5.0+cu${CU_VERSION}"
+        KOHYA_XFORMERS_VERSION = "0.0.28.post2"
 
         INVOKEAI_VERSION = "5.11.0"
         INVOKEAI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"

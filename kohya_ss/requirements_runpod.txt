@@ -1,6 +1,6 @@
-torch==2.6.0+cu124
-torchvision==0.21.0+cu124
-xformers==0.0.29.post3
+torch==2.5.0+cu124
+torchvision==0.20.0+cu124
+xformers==0.0.28.post2
 
 bitsandbytes==0.44.0
 tensorboard==2.14.1
