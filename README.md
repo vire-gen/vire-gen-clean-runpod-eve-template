@@ -55,8 +55,18 @@ Now with SDXL support.
 
 This image is designed to work on [RunPod](https://runpod.io?ref=2xxro4sy).
 You can use my custom [RunPod template](
-https://runpod.io/gsc?template=ya6013lj5a&ref=2xxro4sy)
+https://runpod.io/console/deploy?template=jqw8e1my59&ref=2xxro4sy)
 to launch it on RunPod.
+
+## Downloading models
+
+```bash
+cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
+wget https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors
+cd /workspace/stable-diffusion-webui/models/VAE
+wget https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
+```
 
 ## Building the Docker image
 
