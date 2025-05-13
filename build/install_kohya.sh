@@ -17,13 +17,8 @@ source /venvs/kohya_ss/bin/activate
 pip3 install --no-cache-dir torch==${KOHYA_TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
 pip3 install --no-cache-dir xformers==${KOHYA_XFORMERS_VERSION} --index-url ${INDEX_URL}
 
-# Install some additional Python modules
-pip3 install bitsandbytes==0.43.0 \
-    tensorboard==2.15.2 tensorflow==2.15.0.post1 \
-    wheel packaging tensorrt
-pip3 install tensorflow[and-cuda]
-
 # Install requirements and cleanup
+pip3 install -r requirements_runpod.txt
 pip3 install -r requirements.txt
 pip3 cache purge
 deactivate
