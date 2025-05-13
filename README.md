@@ -16,18 +16,18 @@ Now with SDXL support.
 ## Installs
 
 * Ubuntu 22.04 LTS
-* CUDA 12.1
+* CUDA 12.4
 * Python 3.10.12
-* Torch 2.4.0
-* xformers 0.0.27.post2
+* Torch 2.6.0
+* xformers 0.0.29.post3
 * [Jupyter Lab](https://github.com/jupyterlab/jupyterlab)
 * [code-server](https://github.com/coder/code-server)
 * [Automatic1111 Stable Diffusion Web UI](
-  https://github.com/AUTOMATIC1111/stable-diffusion-webui) 1.10.0
+  https://github.com/AUTOMATIC1111/stable-diffusion-webui) 1.10.1
 * [ControlNet extension](
   https://github.com/Mikubill/sd-webui-controlnet) v1.1.455
 * [After Detailer extension](
-  https://github.com/Bing-su/adetailer) v24.6.0
+  https://github.com/Bing-su/adetailer) v25.3.0
 * [Locon extension](
   https://github.com/ashleykleynhans/a1111-sd-webui-locon)
 * [ReActor extension](https://github.com/Gourieff/sd-webui-reactor)
@@ -36,18 +36,11 @@ Now with SDXL support.
 * [Infinite Image Browsing extension](https://github.com/zanllp/sd-webui-infinite-image-browsing)
 * [CivitAI extension](https://github.com/civitai/sd_civitai_extension)
 * [CivitAI Browser+ extension](https://github.com/BlafKing/sd-civitai-browser-plus)
-* [TensorRT extension](https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT)
 * [Stable Diffusion Dynamic Thresholding (CFG Scale Fix) extension](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)
-* [Kohya_ss](https://github.com/bmaltais/kohya_ss) v24.1.6
+* [Kohya_ss](https://github.com/bmaltais/kohya_ss) v25.0.3
 * [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 * [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager)
-* [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.7post1
-* [sd_xl_base_1.0.safetensors](
-  https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors)
-* [sd_xl_refiner_1.0.safetensors](
-  https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors)
-* [sdxl_vae.safetensors](
-  https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors)
+* [InvokeAI](https://github.com/invoke-ai/InvokeAI) v5.11.0
 * [inswapper_128.onnx](
   https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128.onnx)
 * [runpodctl](https://github.com/runpod/runpodctl)

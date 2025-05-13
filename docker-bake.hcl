@@ -11,11 +11,11 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "7.4.4"
+    default = "8.0.0"
 }
 
 variable "CU_VERSION" {
-    default = "121"
+    default = "124"
 }
 
 variable "BASE_IMAGE_REPOSITORY" {
@@ -23,7 +23,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "1.10.0.post7"
+    default = "1.10.1"
 }
 
 variable "PYTHON_VERSION" {
@@ -38,17 +38,17 @@ target "default" {
         BASE_IMAGE = "${BASE_IMAGE_REPOSITORY}:${BASE_IMAGE_VERSION}"
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
 
-        KOHYA_VERSION = "v24.1.6"
-        KOHYA_TORCH_VERSION = "2.1.2+cu${CU_VERSION}"
-        KOHYA_XFORMERS_VERSION = "0.0.23.post1"
+        KOHYA_VERSION = "v25.0.3"
+        KOHYA_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
+        KOHYA_XFORMERS_VERSION = "0.0.29.post3"
 
-        INVOKEAI_VERSION = "4.2.7post1"
-        INVOKEAI_TORCH_VERSION = "2.2.2+cu${CU_VERSION}"
-        INVOKEAI_XFORMERS_VERSION = "0.0.25.post1"
+        INVOKEAI_VERSION = "5.11.0"
+        INVOKEAI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
+        INVOKEAI_XFORMERS_VERSION = "0.0.29.post3"
 
-        COMFYUI_COMMIT = "a178e25912b01abf436eba1cfaab316ba02d272d"
-        COMFYUI_TORCH_VERSION = "2.4.0+cu${CU_VERSION}"
-        COMFYUI_XFORMERS_VERSION = "0.0.27.post2"
+        COMFYUI_VERSION = "v0.3.33"
+        COMFYUI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
+        COMFYUI_XFORMERS_VERSION = "0.0.29.post3"
 
         VENV_PATH = "/workspace/venvs/a1111"
     }
