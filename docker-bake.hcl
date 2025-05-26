@@ -38,7 +38,7 @@ target "default" {
         BASE_IMAGE = "${BASE_IMAGE_REPOSITORY}:${BASE_IMAGE_VERSION}"
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
 
-        KOHYA_VERSION = "v25.0.3"
+        KOHYA_VERSION = "v25.1.0"
         KOHYA_TORCH_VERSION = "2.5.0+cu${CU_VERSION}"
         KOHYA_XFORMERS_VERSION = "0.0.28.post2"
 
@@ -46,7 +46,7 @@ target "default" {
         INVOKEAI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
         INVOKEAI_XFORMERS_VERSION = "0.0.29.post3"
 
-        COMFYUI_VERSION = "v0.3.34"
+        COMFYUI_VERSION = "v0.3.36"
         COMFYUI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
         COMFYUI_XFORMERS_VERSION = "0.0.29.post3"
 
