@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "8.1.0"
+    default = "8.2.0"
 }
 
 variable "CU_VERSION" {
@@ -38,13 +38,13 @@ target "default" {
         BASE_IMAGE = "${BASE_IMAGE_REPOSITORY}:${BASE_IMAGE_VERSION}"
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
 
-        KOHYA_VERSION = "v25.1.0"
-        KOHYA_TORCH_VERSION = "2.5.0+cu${CU_VERSION}"
-        KOHYA_XFORMERS_VERSION = "0.0.28.post2"
+        KOHYA_VERSION = "v25.1.2"
+        KOHYA_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
+        KOHYA_XFORMERS_VERSION = "0.0.29.post3"
 
         INVOKEAI_VERSION = "5.12.0"
-        INVOKEAI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
-        INVOKEAI_XFORMERS_VERSION = "0.0.29.post3"
+        INVOKEAI_TORCH_VERSION = "2.7.0+cu${CU_VERSION}"
+        INVOKEAI_XFORMERS_VERSION = "0.0.30"
 
         COMFYUI_VERSION = "v0.3.36"
         COMFYUI_TORCH_VERSION = "2.6.0+cu${CU_VERSION}"
