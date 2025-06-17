@@ -23,6 +23,7 @@ ARG KOHYA_TORCH_VERSION
 ARG KOHYA_XFORMERS_VERSION
 WORKDIR /
 COPY kohya_ss/requirements* ./
+COPY --chmod=755 kohya_ss/gui.sh ./
 COPY --chmod=755 build/install_kohya.sh ./
 RUN /install_kohya.sh && rm /install_kohya.sh
 
