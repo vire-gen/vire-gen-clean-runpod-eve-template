@@ -50,7 +50,9 @@ elif [ -d "$SCRIPT_DIR/venv" ]; then
     echo "Activating venv..."
     source "$SCRIPT_DIR/venv/bin/activate" || exit 1
 elif [ -f "$SCRIPT_DIR/template.json" ]; then
-   echo "Activated venv via Runpod template..."
+   echo "Activated venv via Kohya_ss Runpod template..."
+elif [ -f "/workspace/stable-diffusion-webui/template.json" ]; then
+    echo "Activated venv via Stable Diffusion Runpod template..."
 else
     echo "No conda environment active and venv folder does not exist."
     echo "Please run setup.sh first or activate a conda environment."
@@ -63,7 +65,7 @@ if [[ -z "${LD_LIBRARY_PATH}" ]]; then
     YELLOW='\033[0;33m'
     # Set the ANSI escape sequence to reset text color
     RESET='\033[0m'
-    
+
     echo -e "${YELLOW}Warning: LD_LIBRARY_PATH environment variable is not set.${RESET}"
     echo -e "${YELLOW}Certain functionalities may not work correctly.${RESET}"
     echo -e "${YELLOW}Please ensure that the required libraries are properly configured.${RESET}"
