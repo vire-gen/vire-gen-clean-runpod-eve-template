@@ -32,7 +32,7 @@ COPY kohya_ss/accelerate.yaml ./
 
 # Stage 4: ComfyUI Installation
 FROM kohya-install AS comfyui-install
-ARG COMFYUI_COMMIT
+ARG COMFYUI_VERSION
 ARG COMFYUI_TORCH_VERSION
 ARG COMFYUI_XFORMERS_VERSION
 WORKDIR /
