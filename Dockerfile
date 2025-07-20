@@ -16,22 +16,8 @@ RUN /install_invokeai.sh && rm /install_invokeai.sh
 # Copy InvokeAI config file
 COPY invokeai/invokeai.yaml /InvokeAI/
 
-# Stage 3: Kohya_ss Installation
-FROM invokeai-install AS kohya-install
-ARG KOHYA_VERSION
-ARG KOHYA_TORCH_VERSION
-ARG KOHYA_XFORMERS_VERSION
-WORKDIR /
-COPY kohya_ss/requirements* ./
-COPY --chmod=755 build/install_kohya.sh ./
-RUN /install_kohya.sh && rm /install_kohya.sh
-COPY --chmod=755 kohya_ss/gui.sh ./kohya_ss/gui.sh
-
-# Copy the accelerate configuration
-COPY kohya_ss/accelerate.yaml ./
-
-# Stage 4: ComfyUI Installation
-FROM kohya-install AS comfyui-install
+# Stage 3: ComfyUI Installation
+FROM invokeai-install AS comfyui-install
 ARG COMFYUI_VERSION
 ARG COMFYUI_TORCH_VERSION
 ARG COMFYUI_XFORMERS_VERSION
